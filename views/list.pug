@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Список пользователей
+    style.
+      * h2 {text-align: center} 
+      form {border: outset 2px; border-radius: 10px; padding: 1px; width: 300px; margin-left: 37%;}
+body
+    h2 Список пользователей:
+    form  
+      ol
+        each item in items
+          p= 'Логин: ' + item.login 
+          p= ' Пароль: ' + item.password
+          p ____________________________
